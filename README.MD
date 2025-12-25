@@ -44,7 +44,7 @@ sequenceDiagram
 - **Code:** [lambda_middleware.py](lambda_middleware.py) Use the *urllib3* version.
 
 
-### Phase 2: ServiceNow Implementation
+#### Phase 2: ServiceNow Implementation
 
 1. Go to ServiceNow Developer Portal:
 
