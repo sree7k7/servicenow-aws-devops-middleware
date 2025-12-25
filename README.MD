@@ -111,3 +111,7 @@ dd click: trigger → Select API Gateway → Intent: Create new REST API → Sec
 ### 9. Future work
 Make the agent to resolve the ticket.
 Add the secrect key to AWS secrects manager
+
+### 10. Troubleshoot
+Check the cloudwatch logs for lambda.
+make sure api Gateway auth to None
