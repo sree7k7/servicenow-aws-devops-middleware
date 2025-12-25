@@ -9,7 +9,7 @@ To automate the detection and analysis of AWS resource issues by triggering the 
 
 ## Architecture Design
 
-![pics/aws_devops_agent.png](pics/aws_devops_agent.png)
+<!-- ![pics/aws_devops_agent.png](pics/aws_devops_agent.png) -->
 
 ```mermaid
 sequenceDiagram
