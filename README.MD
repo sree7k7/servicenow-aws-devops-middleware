@@ -38,13 +38,13 @@ sequenceDiagram
 - Create a Generic Webhook (*Imp:* You need the OAuth Client ID and Secret Key from ServiceNow)
 - Save the Webhook URL and Secret Key.
 
-1. Create Lambda Function
+2. Create Lambda Function
 - Create a function named ServiceNowToDevOps (Python 3.12+).
 - Add API Gateway as a trigger (Create a new HTTP API, Security: Open/None for demo).
 - **Code:** [lambda_middleware.py](lambda_middleware.py) Use the *urllib3* version.
 
 
-## ServiceNow Implementation
+### Phase 2: ServiceNow Implementation
 
 1. Go to ServiceNow Developer Portal:
 
