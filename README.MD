@@ -42,8 +42,6 @@ sequenceDiagram
 - Create a function named ServiceNowToDevOps (Python 3.12+).
 - Add API Gateway as a trigger (Create a new HTTP API, Security: Open/None for demo).
 - **Code:** [lambda_middleware.py](lambda_middleware.py) Use the *urllib3* version.
-2. Add API Gateway trigger to lambda function
-dd click: trigger → Select API Gateway → Intent: Create new REST API → Security: Open → Add
 
 
 ## ServiceNow Implementation
