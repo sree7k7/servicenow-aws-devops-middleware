@@ -99,11 +99,6 @@ dd click: trigger → Select API Gateway → Intent: Create new REST API → Sec
     ```yaml
     Name: Notify AWS DevOps Agent
     Table: Incident [incident]
-    Advanced: ☑ Check this box (Crucial).
-    Click: "When to run" Tab:
-    When: After
-    Insert: ☑ Checked
-    Update: ☑ Checked
     ```
 
 **code:** [Business_rule.js](Business_rule.js)
