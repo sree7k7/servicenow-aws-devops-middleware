@@ -107,3 +107,7 @@ dd click: trigger → Select API Gateway → Intent: Create new REST API → Sec
 8. Test End-to-End Integration
     Create Test Incident:
     Go to: Incident → Create New
+
+### 9. Future work
+Make the agent to resolve the ticket.
+Add the secrect key to AWS secrects manager
