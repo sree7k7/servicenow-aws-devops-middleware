@@ -1,11 +1,10 @@
 # ServiceNow - aws devops agent serverless (lambda) middleware 
 
-## Description:
-This project connects ServiceNow Incidents to the AWS DevOps Agent using a serverless middleware. It allows the AWS Agent to automatically investigate AWS resources and identify the root cause of issues reported in ServiceNow.
-
 ## Purpose:
 To automate the detection and analysis of AWS resource issues by triggering the DevOps Agent directly from ServiceNow incidents, speeding up incident resolution.
 
+## Description:
+This project connects ServiceNow Incidents to the AWS DevOps Agent using a serverless middleware. It allows the AWS Agent to automatically investigate AWS resources and identify the root cause of issues reported in ServiceNow.
 
 ## Architecture Design
 
@@ -33,14 +32,14 @@ sequenceDiagram
 ***Decoupling**: ServiceNow sends simple JSON data; AWS Lambda handles the complex signing logic.*
 ## 🚀 Implementation Guide
 #### Phase 1: AWS Configuration
-1. Configure DevOps Agent
+1. Configure AWS DevOps Agent 🤖
 - Navigate to AWS Console > DevOps Agent.
 - Create a Generic Webhook (*Imp:* You need the OAuth Client ID and Secret Key from ServiceNow)
 - Save the Webhook URL and Secret Key.
 
-2. Create Lambda Function
+2. Create Lambda Function 
 - Create a function named ServiceNowToDevOps (Python 3.12+).
-- Add API Gateway as a trigger (Create a new HTTP API, Security: Open/None for demo).
+- Add API Gateway as a trigger (Create a new REST API, Security: None).
 - **Code:** [lambda_middleware.py](lambda_middleware.py) Use the *urllib3* version.
 
 
