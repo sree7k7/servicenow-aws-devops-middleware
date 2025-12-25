@@ -114,4 +114,9 @@ Add the secrect key to AWS secrects manager
 
 ### 10. Troubleshoot
 Check the cloudwatch logs for lambda.
-make sure api Gateway auth to None
+make sure api Gateway auth to NoneCheck ServiceNow Logs:
+
+servicenow:
+Go to: All → System Logs → System Log → All
+Filter by: Source contains "AWS DevOps"
+Look for webhook success/failure messages
