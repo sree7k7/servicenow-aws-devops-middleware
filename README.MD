@@ -1,4 +1,4 @@
-# ServiceNow aws devops agent serverless (lambda) middleware 
+# ServiceNow - aws devops agent serverless (lambda) middleware 
 
 ## Description:
 This project connects ServiceNow Incidents to the AWS DevOps Agent using a serverless middleware. It allows the AWS Agent to automatically investigate AWS resources and identify the root cause of issues reported in ServiceNow.
