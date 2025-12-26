@@ -1,4 +1,16 @@
-# ServiceNow - aws devops agent serverless (lambda) middleware 
+# ServiceNow - aws devops agent, serverless (lambda) middleware 
+
+## Run
+- [ServiceNow - aws devops agent, serverless (lambda) middleware](#servicenow---aws-devops-agent-serverless-lambda-middleware)
+  - [Run](#run)
+  - [Purpose:](#purpose)
+  - [Description:](#description)
+  - [Architecture Design](#architecture-design)
+  - [🚀 Implementation Guide](#-implementation-guide)
+      - [Phase 1: AWS Configuration](#phase-1-aws-configuration)
+      - [Phase 2: ServiceNow Implementation](#phase-2-servicenow-implementation)
+  - [Future work](#future-work)
+  - [Troubleshoot](#troubleshoot)
 
 ## Purpose:
 To automate the detection and analysis of AWS resource issues by triggering the DevOps Agent directly from ServiceNow incidents, speeding up incident resolution.
@@ -33,8 +45,8 @@ sequenceDiagram
 ## 🚀 Implementation Guide
 #### Phase 1: AWS Configuration
 1. Configure AWS DevOps Agent 🤖
-- Navigate to AWS Console > DevOps Agent.
-- Create a Generic Webhook (*Imp:* You need the OAuth Client ID and Secret Key from ServiceNow)
+- Navigate to AWS Console → DevOps Agent.
+- Create a Generic Webhook.
 - Save the Webhook URL and Secret Key.
 
 2. Create Lambda Function 
@@ -105,15 +117,16 @@ sequenceDiagram
     Create Test Incident:
     Go to: Incident → Create New
 
-### 9. Future work
+## Future work
 Make the agent to resolve the ticket.
 Add the secrect key to AWS secrects manager
 
-### 10. Troubleshoot
+## Troubleshoot
 Check the cloudwatch logs for lambda.
-make sure api Gateway auth to NoneCheck ServiceNow Logs:
+make sure api Gateway auth to None.
 
-servicenow:
+- Check ServiceNow Logs:
+
 Go to: All → System Logs → System Log → All
 Filter by: Source contains "AWS DevOps"
 Look for webhook success/failure messages
