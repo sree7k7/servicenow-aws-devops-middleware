@@ -1,8 +1,7 @@
-# ServiceNow - aws devops agent, serverless (lambda) middleware 
+ServiceNow - aws devops agent, serverless (lambda) middleware 
 
 ## Run
-- [ServiceNow - aws devops agent, serverless (lambda) middleware](#servicenow---aws-devops-agent-serverless-lambda-middleware)
-  - [Run](#run)
+
   - [Purpose:](#purpose)
   - [Description:](#description)
   - [Architecture Design](#architecture-design)
